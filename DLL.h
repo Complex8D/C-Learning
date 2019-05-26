@@ -83,11 +83,11 @@ listelem* dll_remove(listelem *a)
     return b;
 }
 
-listelem *dll_get_first_pos(listelem *a)
+listelem *dll_get_first_pos(listelem *list) 
 {
-    while(dll_previous(a) != NULL)
-       a = dll_previous(a); 
-    return a->next_number;
+    while(dll_previous(list) != NULL)
+       list = dll_previous(list); 
+    return list->next_number;
 }
 
 
@@ -183,7 +183,7 @@ void dll_out_list(listelem *a)
         a = dll_next(a);
         place++;
     }
-    printf("] ");
+    printf("]");
     return;
 }
 
