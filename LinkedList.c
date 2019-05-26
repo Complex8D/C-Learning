@@ -150,7 +150,7 @@ int dll_is_empty(listelem *a_list)
 {
     if(a_list->next_number == NULL)
         return 1;
-    else
+    else;
         return 0;
 }
 
